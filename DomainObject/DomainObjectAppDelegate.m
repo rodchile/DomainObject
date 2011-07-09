@@ -6,9 +6,10 @@
 //  Copyright 2011 Excelsys Soluciones SpA. All rights reserved.
 //
 
+#import "RestKit/RestKit.h"
 #import "DomainObjectAppDelegate.h"
-
 #import "DomainObjectViewController.h"
+#import "Status.h"
 
 @implementation DomainObjectAppDelegate
 
@@ -19,6 +20,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    RKObjectManager* objectManager = [RKObjectManager objectManagerWithBaseURL:@"http://twitter.com"];
+    RKObjectMapping* statusMapping = [RKObjectMapping mappingForClass:[Status class]];
+    
+    [statusMapping mapKeyPathsToAttributes:@"id", @"statusID",
+     @"created_at", @"createdAt",
+     @"text", @"tweet",
+     @"url", @"urlString",
+     @"in_reply_to_screen_name", @"inReplyToScreenName",
+     @"favorited", @"isFavorited",
+     nil];
+    
+    [statusMapping.dateFormatStrings addObject:@"E MMM d HH:mm:ss Z y"];
+
+    [objectManager.mappingProvider setObjectMapping:statusMapping forKeyPath:@"status"];
+    
     // Override point for customization after application launch.
      
     self.window.rootViewController = self.viewController;

@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RestKit/RestKit.h"
 
-@interface DomainObjectViewController : UIViewController {
-    
+
+@interface DomainObjectViewController : UIViewController<RKObjectLoaderDelegate>{
+   	NSArray* _statuses;
+    IBOutlet UILabel *tweetsSize;
+    IBOutlet UILabel *lastTweet;
 }
+
+@property(nonatomic,retain) IBOutlet UILabel *tweetsSize;
+@property(nonatomic,retain) IBOutlet UILabel *lastTweet;
 
 @end

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF11903713C7AC3B005A7734 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = AF11903613C7AC3B005A7734 /* Status.m */; };
+		AF284D4C13C7FFCD00598065 /* libRestKitCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4ED7713C785DC00CF0E4B /* libRestKitCoreData.a */; };
+		AF284D4D13C7FFD800598065 /* libRestKitJSONParserJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4ED7313C785DC00CF0E4B /* libRestKitJSONParserJSONKit.a */; };
+		AF284D4E13C7FFDF00598065 /* libRestKitNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4ED6913C785DC00CF0E4B /* libRestKitNetwork.a */; };
+		AF284D4F13C8000300598065 /* libRestKitObjectMapping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4ED6B13C785DC00CF0E4B /* libRestKitObjectMapping.a */; };
+		AF284D5013C8000E00598065 /* libRestKitSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4ED6D13C785DC00CF0E4B /* libRestKitSupport.a */; };
+		AF284D5113C8001900598065 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4ED8413C7894D00CF0E4B /* CFNetwork.framework */; };
+		AF284D5213C8002700598065 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4ED8613C7895800CF0E4B /* CoreData.framework */; };
+		AF284D5313C8005000598065 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4ED8813C7895D00CF0E4B /* MobileCoreServices.framework */; };
+		AF284D5413C8006300598065 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4ED8A13C7896400CF0E4B /* SystemConfiguration.framework */; };
 		AFA61DFC13C76C0E000FF96E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA61DFB13C76C0E000FF96E /* UIKit.framework */; };
 		AFA61DFE13C76C0E000FF96E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA61DFD13C76C0E000FF96E /* Foundation.framework */; };
 		AFA61E0013C76C0E000FF96E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA61DFF13C76C0E000FF96E /* CoreGraphics.framework */; };
@@ -35,6 +45,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AF284D4A13C7FFC200598065 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC4ED5413C785DB00CF0E4B /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 255B7588133BABBF00ED76AD;
+			remoteInfo = RestKit;
+		};
 		AFA61E1F13C76C0E000FF96E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AFA61DEE13C76C0D000FF96E /* Project object */;
@@ -122,6 +139,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF11903513C7AC3B005A7734 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		AF11903613C7AC3B005A7734 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
 		AFA61DF713C76C0E000FF96E /* DomainObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DomainObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA61DFB13C76C0E000FF96E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFA61DFD13C76C0E000FF96E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -155,6 +174,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF284D5413C8006300598065 /* SystemConfiguration.framework in Frameworks */,
+				AF284D5313C8005000598065 /* MobileCoreServices.framework in Frameworks */,
+				AF284D5213C8002700598065 /* CoreData.framework in Frameworks */,
+				AF284D5113C8001900598065 /* CFNetwork.framework in Frameworks */,
+				AF284D5013C8000E00598065 /* libRestKitSupport.a in Frameworks */,
+				AF284D4F13C8000300598065 /* libRestKitObjectMapping.a in Frameworks */,
+				AF284D4E13C7FFDF00598065 /* libRestKitNetwork.a in Frameworks */,
+				AF284D4D13C7FFD800598065 /* libRestKitJSONParserJSONKit.a in Frameworks */,
+				AF284D4C13C7FFCD00598065 /* libRestKitCoreData.a in Frameworks */,
 				AFA61DFC13C76C0E000FF96E /* UIKit.framework in Frameworks */,
 				AFA61DFE13C76C0E000FF96E /* Foundation.framework in Frameworks */,
 				AFA61E0013C76C0E000FF96E /* CoreGraphics.framework in Frameworks */,
@@ -224,6 +252,8 @@
 			children = (
 				AFA61E0A13C76C0E000FF96E /* DomainObjectAppDelegate.h */,
 				AFA61E0B13C76C0E000FF96E /* DomainObjectAppDelegate.m */,
+				AF11903513C7AC3B005A7734 /* Status.h */,
+				AF11903613C7AC3B005A7734 /* Status.m */,
 				AFA61E0D13C76C0E000FF96E /* MainWindow.xib */,
 				AFA61E1013C76C0E000FF96E /* DomainObjectViewController.h */,
 				AFA61E1113C76C0E000FF96E /* DomainObjectViewController.m */,
@@ -295,6 +325,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AF284D4B13C7FFC200598065 /* PBXTargetDependency */,
 			);
 			name = DomainObject;
 			productName = DomainObject;
@@ -472,6 +503,7 @@
 				AFA61E0913C76C0E000FF96E /* main.m in Sources */,
 				AFA61E0C13C76C0E000FF96E /* DomainObjectAppDelegate.m in Sources */,
 				AFA61E1213C76C0E000FF96E /* DomainObjectViewController.m in Sources */,
+				AF11903713C7AC3B005A7734 /* Status.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +518,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AF284D4B13C7FFC200598065 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = AF284D4A13C7FFC200598065 /* PBXContainerItemProxy */;
+		};
 		AFA61E2013C76C0E000FF96E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AFA61DF613C76C0E000FF96E /* DomainObject */;
